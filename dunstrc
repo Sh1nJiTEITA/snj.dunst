@@ -2,7 +2,7 @@
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
-    monitor = DP-2
+    monitor = 0
 
     # Display notification on focused monitor.  Possible modes are:
     #   mouse: follow mouse pointer
@@ -12,7 +12,6 @@
     # "keyboard" needs a window manager that exports the
     # _NET_ACTIVE_WINDOW property.
     # This should be the case for almost all modern window managers.
-    #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
     follow = none
@@ -22,7 +21,7 @@
     width = 600
     height = 300
     origin = top-left
-    offset = 950x20
+    offset = 660x20
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -250,7 +249,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 12
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.
@@ -320,7 +319,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
+    background = "#282828F7"
     foreground = "#ebdbb2"
     frame_color = "#3c3836"
     timeout = 10
@@ -328,7 +327,7 @@
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#282828"
+    background = "#282828F7"
     foreground = "#ebdbb2"
     frame_color = "#3c3836"
     timeout = 10
@@ -337,10 +336,10 @@
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#282828"
+    background = "#282828F7"
     foreground = "#ebdbb2"
     frame_color = "#3c3836"
-    timeout = 120
+    timeout = 15
     override_pause_level = 60
     # Icon for notifications with critical urgency
     default_icon = dialog-warning
