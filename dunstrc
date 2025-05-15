@@ -22,6 +22,7 @@
     width = 600
     height = 300
     origin = top-left
+    # offset = 950x20
     offset = 950x20
 
     # Scale factor. It is auto-detected if value is 0.
@@ -41,13 +42,13 @@
     progress_bar_height = 10
 
     # Set the frame width of the progress bar
-    progress_bar_frame_width = 1
+    progress_bar_frame_width = 2
 
     # Set the minimum width for the progress bar
-    progress_bar_min_width = 150
+    progress_bar_min_width = 500
 
     # Set the maximum width for the progress bar
-    progress_bar_max_width = 300
+    progress_bar_max_width = 600
 
     # Corner radius for the progress bar. 0 disables rounded corners.
     progress_bar_corner_radius = 0
@@ -79,7 +80,7 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
     horizontal_padding = 8
@@ -89,7 +90,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 2
+    frame_width = 0
 
     # Defines color of the frame around the notification window.
     frame_color = "#3c3836"
@@ -250,7 +251,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 12
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.
@@ -320,7 +321,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
+    background = "#282828FC"
     foreground = "#ebdbb2"
     frame_color = "#3c3836"
     timeout = 10
