@@ -71,7 +71,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 0
+    transparency = 90
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -83,7 +83,7 @@
     padding = 12
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 12
 
     # Padding between text and icon.
     text_icon_padding = 10
@@ -126,7 +126,7 @@
 
     ### Text ###
 
-    font = JetBrainsMono Nerd Font 10
+    font = JetBrainsMono Nerd Font 12
     line_height = 0
 
     # Possible values are:
@@ -315,32 +315,33 @@
     # dunst will attempt to calculate an appropriate dpi value for each monitor
     # using the resolution and physical size. This might be useful in setups
     # where there are multiple screens with very different dpi values.
-    per_monitor_dpi = false
+    per_monitor_dpi = false 
 
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828FC"
+    background = "#2020203D"
     foreground = "#ebdbb2"
-    frame_color = "#3c3836"
+    frame_color = "#3c38360F"
     timeout = 10
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#282828"
+    # background = "#2828280F"
+    background = "#2020203D"
     foreground = "#ebdbb2"
-    frame_color = "#3c3836"
+    frame_color = "#3c38360F"
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#282828"
+    background = "#2020203F"
     foreground = "#ebdbb2"
-    frame_color = "#3c3836"
+    frame_color = "#101010"
     timeout = 120
     override_pause_level = 60
     # Icon for notifications with critical urgency
